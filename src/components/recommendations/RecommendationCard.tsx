@@ -207,16 +207,11 @@ function ListCard({ rec }: { rec: Recommendation }) {
         {rec.title}
       </p>
 
-      {/* Row 3: description */}
-      <p className="text-[14px] text-[#555] leading-[20px] tracking-[-0.28px] font-normal line-clamp-2 mb-3">
-        {rec.description}
-      </p>
-
-      {/* Row 4: score nudge */}
+      {/* Row 4: description in score nudge box */}
       <div className="flex items-center gap-2 bg-[#f9f7fd] px-2 pt-2 pb-2 rounded mt-5 mb-5">
         <TrendUpIcon />
         <span className="text-[13px] text-[#555] leading-[18px] tracking-[-0.26px]">
-          {buildImpactMessage(rec)}
+          {rec.description}
         </span>
       </div>
 

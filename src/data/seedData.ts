@@ -1032,6 +1032,284 @@ export const seedRecommendations: Recommendation[] = [
     ]),
   },
 
+  // 9 — 69de02549c10756b6b6132b5
+  {
+    id: '69de02549c10756b6b6132b5',
+    title: 'Set Clear PM Response Standards to Convert More Leads',
+    description:
+      'Property management inquiries often stall when landlords can\'t find clear communication standards and response times. By publishing explicit service commitments, you\'ll reduce friction in the decision process and showcase your professionalism—a key strength that differentiates you from competitors who leave prospects guessing.',
+    category: 'Conversion',
+    impactLabel: 'High impact',
+    effort: 'Bigger lift',
+    themeId: 'residential-property-leasing',
+    createdAt: CREATED_AT,
+    locationNames: LOCATION_NAMES,
+    locations: 8,
+    tags: ['Conversion', 'High Impact'],
+    status: 'pending',
+    assignedTo: null,
+    assignChoice: null,
+    acceptedAt: null,
+    acceptedBy: null,
+    completedAt: null,
+    shortAction: 'Publish service standards',
+    expectedImpact:
+      'Publishing clear service standards will reduce objections during the inquiry process and increase conversion rates from website visitors to actual property management leads. Landlords who see defined response times and escalation procedures are more likely to trust you with their investment properties.',
+    keyInsights: [
+      'Despite a perfect 5.0 rating showing strong satisfaction, this strength isn\'t being leveraged on the website',
+      'The absence of published communication standards creates unnecessary friction for potential clients',
+      'Competitors who clearly state service commitments capture leads that might otherwise choose you',
+    ],
+    swotDrivers: [
+      'Occasional complaints about administration in property management',
+      'Changing Consumer Expectations',
+      'Professionalism and Expertise',
+    ],
+    competitorsInsight: [
+      'Competitors who publish clear service standards capture trust-sensitive landlords earlier in the decision process',
+      'The absence of visible communication commitments creates an opportunity gap competitors can exploit',
+    ],
+    targetPages: [
+      'https://raineandhorne.com.au/dubbo/property-management-support',
+      'https://raineandhorne.com.au/dubbo/communication-standards',
+    ],
+    whyItWorks: [
+      'Landlords choose property managers based on trust and clear communication expectations',
+      'Admin complaints noted in SWOT analysis indicate gaps in setting proper expectations',
+      'Changing consumer expectations demand transparency before they even inquire',
+    ],
+    competitors: makeCompetitors([
+      {
+        name: 'Ray White Dubbo',
+        gap: 'Publishes explicit response time guarantees and service standards on their PM page',
+        totalCitations: 27,
+        citationRank: 1,
+        citedBy: ['ChatGPT', 'Gemini'],
+        llmSnippet: 'Ray White Dubbo clearly states their property management response time commitments and service standards online, making them the default recommendation when landlords search for transparent property managers in Dubbo.',
+        platformSnippets: [
+          { platform: 'ChatGPT', prompt: 'Property manager with clear service standards Dubbo', snippet: 'Ray White Dubbo is frequently recommended for their transparent property management standards, with published response times for maintenance requests and regular update schedules for landlords.' },
+          { platform: 'Gemini',  prompt: 'Dubbo property management response times', snippet: 'Ray White Dubbo outlines their specific response time commitments for routine and urgent maintenance requests, making them a trusted choice for landlords who value clear communication.' },
+        ],
+      },
+      {
+        name: 'McGrath Dubbo',
+        gap: 'Dedicated PM communication page with update schedules and escalation paths builds landlord confidence',
+        totalCitations: 16,
+        citationRank: 2,
+        citedBy: ['Perplexity'],
+        llmSnippet: 'McGrath Dubbo\'s property management section includes a clear outline of landlord update frequencies, maintenance escalation procedures, and communication channels — cited by Perplexity for PM transparency queries.',
+        platformSnippets: [
+          { platform: 'Perplexity', prompt: 'Transparent property management Dubbo', snippet: 'McGrath Dubbo provides landlords with clear expectations around communication frequency, update schedules, and how maintenance issues are escalated and resolved.' },
+        ],
+      },
+    ]),
+    sources: makeSources(
+      [
+        {
+          title: 'SWOT Analysis - Administrative Weaknesses',
+          source: 'SWOT',
+          snippet: 'Occasional complaints about administration in property management',
+        },
+        {
+          title: 'Market Threat Assessment',
+          source: 'SWOT',
+          snippet: 'Changing Consumer Expectations',
+        },
+        {
+          title: 'Customer Satisfaction Data',
+          source: 'gemini',
+          snippet: 'Perfect 5.0 rating indicating strong satisfaction',
+        },
+      ],
+      'https://raineandhorne.com.au/dubbo/property-management-support',
+    ),
+    contentGaps: [],
+    promptsTriggeringThis: [],
+    llmCoverageGap: {
+      platforms: [],
+      summary:
+        'Before landlords enquire, they want simple, clear communication standards they can trust. The site lacks a page with response times, update frequency, and escalation steps.',
+    },
+    generatedAsset: null,
+    checklist: makeChecklist('69de02549c10756b6b6132b5', [
+      {
+        label: 'Document your actual response times',
+        description: 'Write down what you genuinely commit to: urgent issues (4 hours), routine enquiries (24 hours), maintenance requests (48 hours). If the standard isn\'t set internally first, publishing it externally won\'t stick.',
+        stepType: 'task',
+      },
+      {
+        label: 'Create a simple service standards page',
+        description: 'One page that lists your communication commitments, how often landlords get updates, and what happens when something needs escalating. Plain language, no jargon — think of it as your promise in writing.',
+        stepType: 'task',
+        targetPage: 'https://raineandhorne.com.au/dubbo/property-management-support',
+      },
+      {
+        label: 'Add direct contact info for different request types',
+        description: 'Make it clear who to call for urgent repairs vs routine enquiries vs after-hours emergencies. A simple table or three labelled contact options removes the friction of "I don\'t know who to call."',
+        stepType: 'task',
+      },
+      {
+        label: 'Add a FAQ for common admin concerns',
+        description: 'Answer the questions that precede hesitation: "What happens if I can\'t reach you?", "How quickly will a repair be handled?", "When do I get my monthly statement?" — these are the objections that stop landlords from signing up.',
+        stepType: 'task',
+      },
+      {
+        label: 'Put an enquiry form on every PM page',
+        description: 'Once a landlord has read your standards and feels confident, the form should be right there — no hunting for a contact page. Add a phone number too, prominently displayed.',
+        stepType: 'task',
+      },
+    ]),
+  },
+
+  // 10 — 69de03209c10756b6b6132bd
+  {
+    id: '69de03209c10756b6b6132bd',
+    title: 'Complete Domain, Realestate and Farmbuy Rural Profiles',
+    description:
+      'Major property portals like Domain, Realestate.com.au, and Farmbuy dominate rural property searches in Dubbo, appearing frequently in search results and citation sources. Completing and optimizing your profiles on these platforms will significantly increase your visibility to rural buyers and sellers who start their property journey on these trusted portals.',
+    category: 'Local SEO',
+    impactLabel: 'High impact',
+    effort: 'Quick win',
+    themeId: 'rural-property-sales',
+    createdAt: CREATED_AT,
+    locationNames: LOCATION_NAMES,
+    locations: 5,
+    tags: ['Local SEO', 'Quick Win'],
+    status: 'pending',
+    assignedTo: null,
+    assignChoice: null,
+    acceptedAt: null,
+    acceptedBy: null,
+    completedAt: null,
+    shortAction: 'Complete key portal profiles',
+    expectedImpact:
+      'By establishing a strong presence on these dominant property portals, you\'ll capture more leads from rural property seekers who rely on these platforms. This increased visibility will drive more direct inquiries, phone calls, and website traffic while simultaneously strengthening your local SEO through improved citation consistency.',
+    keyInsights: [
+      'Property portals serve as both lead generation platforms and critical citation sources for local SEO',
+      'Rural property searches have unique characteristics that require specialized portal optimization',
+    ],
+    swotDrivers: [
+      'Opportunity to leverage established portal traffic for rural property searches',
+      'Threat from competitors who maintain active, optimized portal profiles',
+    ],
+    competitorsInsight: [
+      'Major property portals rank prominently for rural property searches, making profile optimization essential',
+      'Competitors with complete, active portal profiles capture leads before prospects reach agency websites',
+    ],
+    targetPages: ['https://raineandhorne.com.au'],
+    whyItWorks: [
+      'These portals appear prominently in your citation sources, indicating Google uses them to verify business information',
+      'Rural buyers and sellers typically start their property search on these major portals before contacting agents',
+      'Consistent business details across portals strengthen Google\'s trust signals and improve local search rankings',
+    ],
+    competitors: makeCompetitors([
+      {
+        name: 'Elders Real Estate Dubbo',
+        pageUrl: 'https://eldersrealestate.com.au',
+        gap: 'Competitors likely have established portal presence capturing rural property searches',
+        totalCitations: 33,
+        citationRank: 1,
+        citedBy: ['ChatGPT', 'Gemini', 'Perplexity'],
+        llmSnippet: 'Elders Real Estate Dubbo maintains fully optimised profiles on Domain, Realestate.com.au, and Farmbuy — consistently surfaced by AI tools for rural property searches in the Dubbo region.',
+        platformSnippets: [
+          { platform: 'ChatGPT', prompt: 'Rural property agents Dubbo', snippet: 'Elders Real Estate Dubbo is prominently featured across major property portals including Domain and Realestate.com.au, making them the top recommendation for rural property searches in Dubbo.' },
+          { platform: 'Gemini',  prompt: 'Farms for sale Dubbo NSW', snippet: 'Elders Real Estate Dubbo has complete portal profiles on Domain and Farmbuy with rural-specific service descriptions and active listings, ranking highly for rural Dubbo property searches.' },
+          { platform: 'Perplexity', prompt: 'Real estate agency rural properties Dubbo', snippet: 'Elders Real Estate Dubbo appears consistently across major property portals with complete business profiles and rural-focused content, making them easy to find for buyers and sellers.' },
+        ],
+      },
+      {
+        name: 'Matt Hansen Real Estate',
+        pageUrl: 'https://matthansenrealestate.com.au',
+        gap: 'Active portal profiles provide competitive advantage in rural market visibility',
+        totalCitations: 22,
+        citationRank: 2,
+        citedBy: ['ChatGPT', 'Perplexity'],
+        llmSnippet: 'Matt Hansen Real Estate maintains active profiles on Domain and Realestate.com.au with rural property listings and service descriptions — regularly cited by AI tools as a strong local option for Dubbo rural searches.',
+        platformSnippets: [
+          { platform: 'ChatGPT', prompt: 'Farm sales agents near Dubbo', snippet: 'Matt Hansen Real Estate is active on major property portals with rural listings and complete agency profiles, frequently appearing in results for farm and rural property searches near Dubbo.' },
+          { platform: 'Perplexity', prompt: 'Rural lifestyle properties Dubbo agent', snippet: 'Matt Hansen Real Estate maintains a strong presence on Realestate.com.au and Domain with lifestyle and rural property specialisation, making them visible for rural search queries.' },
+        ],
+      },
+      {
+        name: 'Ray White Dubbo',
+        pageUrl: 'https://raywhiterichardsonandsinclair.com.au',
+        gap: 'Major franchise benefits from strong portal relationships and visibility',
+        totalCitations: 18,
+        citationRank: 3,
+        citedBy: ['Gemini'],
+        llmSnippet: 'Ray White Dubbo\'s national franchise relationship ensures a high-quality presence across Domain and Realestate.com.au, giving them consistent visibility for rural property queries in the Dubbo area.',
+        platformSnippets: [
+          { platform: 'Gemini', prompt: 'Real estate portals Dubbo rural listings', snippet: 'Ray White Dubbo benefits from their national franchise\'s established portal relationships, with well-maintained profiles on Domain and Realestate.com.au covering both residential and rural properties.' },
+        ],
+      },
+    ]),
+    sources: makeSources(
+      [
+        {
+          title: 'Domain Australia',
+          source: 'domain.com.au',
+          snippet: 'Major Australian property portal used by buyers and sellers.',
+        },
+        {
+          title: 'realestate.com.au',
+          source: 'realestate.com.au',
+          snippet: 'Leading property portal where agencies list and promote properties.',
+        },
+        {
+          title: 'Farmbuy',
+          source: 'farmbuy.com',
+          snippet: 'Specialist portal for farms and rural properties in Australia.',
+        },
+      ],
+      'https://raineandhorne.com.au',
+    ),
+    contentGaps: [],
+    promptsTriggeringThis: [],
+    llmCoverageGap: {
+      platforms: [],
+      summary:
+        'People searching on Google for rural property sales in Dubbo often start on big property portals. Your site likely lacks fully completed, rural-focused profiles on these portals.',
+    },
+    generatedAsset: null,
+    checklist: makeChecklist('69de03209c10756b6b6132bd', [
+      {
+        label: 'Claim or verify your agency profiles on all three portals',
+        description: 'Domain, Realestate.com.au, and Farmbuy are the portals rural buyers and sellers use most. Claiming takes 10–15 minutes each — log in or create an agency account and verify your details.',
+        stepType: 'link',
+        links: [
+          { label: 'Domain.com.au — claim your agency profile', url: 'https://www.domain.com.au/agent-admin' },
+          { label: 'Realestate.com.au — agency portal login', url: 'https://www.realestate.com.au/agent-admin' },
+          { label: 'Farmbuy.com — list your agency', url: 'https://www.farmbuy.com' },
+        ],
+      },
+      {
+        label: 'Use consistent business details across all three',
+        description: 'Your business name, address, and phone number must be identical on every platform — exactly as they appear on your website. Even small differences (like "St" vs "Street") reduce Google\'s trust in your location data.',
+        stepType: 'nap',
+        napData: {
+          name: 'Raine & Horne Dubbo',
+          address: '63 Macquarie Street, Dubbo NSW 2830',
+          phone: '(02) 6882 6999',
+        },
+      },
+      {
+        label: 'Write a rural-focused service description',
+        description: 'Add a bio that specifically mentions farms, lifestyle blocks, and acreage — not just residential sales. Buyers of rural properties filter for agents who understand their market. Generic descriptions lose them to Elders and Matt Hansen.',
+        stepType: 'task',
+      },
+      {
+        label: 'Upload team photos and link to your website',
+        description: 'Profiles with photos and a website link get significantly more clicks. Use real photos — not stock. Even a smartphone photo of your team outside the office is better than nothing.',
+        stepType: 'task',
+      },
+      {
+        label: 'Add current rural listings and note recent sales',
+        description: 'An empty profile signals inactivity. Populate with any current rural or lifestyle listings you have. If you have recent rural sales, add them with keyword-rich descriptions mentioning property type, acreage, and location.',
+        stepType: 'task',
+      },
+    ]),
+  },
+
   // 8 — 69de02549c10756b6b6132b4
   {
     id: '69de02549c10756b6b6132b4',
