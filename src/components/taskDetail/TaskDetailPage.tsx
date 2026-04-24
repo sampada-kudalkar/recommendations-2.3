@@ -10,23 +10,9 @@ import { useAppStore } from '../../store/useAppStore'
 import { nsaThemesConfig } from '../../data/nsaThemesConfig'
 import { getLocationsForRec } from '../../data/locationsData'
 import type { ChecklistStep } from '../../types'
+import ContentDetailPage from './ContentDetailPage'
 
 const BASE = import.meta.env.BASE_URL
-
-// ── Styled dark tooltip wrapper ───────────────────────────────────────────────
-function StyledTooltip({ label, children }: { label: string; children: React.ReactNode }) {
-  const [visible, setVisible] = useState(false)
-  return (
-    <div className="relative inline-flex" onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)}>
-      {children}
-      {visible && (
-        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2.5 py-1 bg-[#212121] text-white text-[11px] leading-[16px] rounded-full whitespace-nowrap pointer-events-none z-50 shadow-sm">
-          {label}
-        </div>
-      )}
-    </div>
-  )
-}
 
 // ── Pin icon ──────────────────────────────────────────────────────────────────
 function PinIcon() {
@@ -39,35 +25,6 @@ function PinIcon() {
 }
 
 // ── Platform favicon helpers ──────────────────────────────────────────────────
-const PLATFORM_DOMAIN_MAP: Record<string, string> = {
-  gemini: 'gemini.google.com',
-  chatGPT: 'chatgpt.com',
-  perplexity: 'perplexity.ai',
-}
-function getFaviconUrl(platform: string): string {
-  const domain = PLATFORM_DOMAIN_MAP[platform] ?? (platform.includes('.') ? platform : null)
-  return domain ? `https://www.google.com/s2/favicons?domain=${domain}&sz=32` : ''
-}
-const PLATFORM_BADGE_COLORS: Record<string, string> = {
-  SWOT: 'bg-[#e8f4fd] text-[#1976d2]',
-  'Multiple sources': 'bg-[#f3f4f6] text-[#555]',
-}
-function PlatformIcon({ platform }: { platform: string }) {
-  const faviconUrl = getFaviconUrl(platform)
-  if (faviconUrl) {
-    return (
-      <img src={faviconUrl} alt={platform} className="w-4 h-4 rounded-sm flex-shrink-0"
-        onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }} />
-    )
-  }
-  const colorClass = PLATFORM_BADGE_COLORS[platform] ?? 'bg-[#f3f4f6] text-[#555]'
-  return (
-    <span className={`w-4 h-4 rounded-sm flex items-center justify-center text-[10px] font-medium flex-shrink-0 ${colorClass}`}>
-      {platform.charAt(0).toUpperCase()}
-    </span>
-  )
-}
-
 // ── Rich step box ─────────────────────────────────────────────────────────────
 function StepRichBox({ step }: { step: ChecklistStep }) {
   const [copied, setCopied] = useState<string | null>(null)
@@ -248,7 +205,7 @@ function ChatGPTResponsePanel({ prompt, competitors, platform }: {
   )
 }
 
-function CitationBarChart({ competitors, youCitations, themeLabel, llmSummary, prompt0 }: CitationBarChartProps) {
+function CitationBarChart({ competitors, youCitations, themeLabel, llmSummary: _llmSummary, prompt0 }: CitationBarChartProps) {
   const [activePlatform, setActivePlatform] = useState<Platform>('ChatGPT')
   const [summaryOpen, setSummaryOpen] = useState(false)
 
@@ -317,7 +274,8 @@ function CitationBarChart({ competitors, youCitations, themeLabel, llmSummary, p
     },
     series: [{ type: 'bar', name: 'Citations', data }],
     tooltip: {
-      formatter(this: Highcharts.TooltipFormatterContextObject) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      formatter(this: any) {
         return `<b>${this.key}</b><br/>Citations share: <b>${this.y}%</b>`
       },
     },
@@ -526,11 +484,14 @@ export default function TaskDetailPage() {
     )
   }
 
+  // ── Content category gets its own dedicated layout ──────────────────────────
+  if (rec.category === 'Content') {
+    return <ContentDetailPage />
+  }
+
   const themeConfig   = nsaThemesConfig[rec.themeId]
   const locationCount = rec.locations ?? 1
   const locations     = getLocationsForRec(rec.id, locationCount)
-  const firstLocation = locations[0] ?? 'Dubbo, NSW 2830'
-  const extraLocs     = locationCount - 1
 
   const handleLocEnter = () => {
     if (locMoreRef.current) {

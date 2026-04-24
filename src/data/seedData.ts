@@ -84,7 +84,7 @@ export const seedRecommendations: Recommendation[] = [
       'Your perfect 5.0 rating from 457 reviews shows buyers and sellers trust you, but you\'re missing opportunities to capture local search traffic. Publishing regular Dubbo market updates and suburb guides will help more people find you when researching property in your area. This positions your 40+ years of local expertise front and center, turning searches into enquiries.',
     category: 'Content',
     impactLabel: 'High impact',
-    effort: 'Medium',
+    effort: 'Quick win',
     themeId: 'residential-property-sales',
     createdAt: CREATED_AT,
     locationNames: LOCATION_NAMES,
@@ -194,6 +194,17 @@ export const seedRecommendations: Recommendation[] = [
         'Sentiment is mixed: strong praise exists, but some sources say public data is thin. The site lacks consistent Dubbo-specific updates and guides.',
     },
     generatedAsset: null,
+    aeoScore: {
+      you: 95,
+      competitor: 85,
+      subScores: [
+        { name: 'Readability',            weight: 10.2, you: 91, competitor: 70, delta: 21 },
+        { name: 'Content freshness',      weight: 10.2, you: 90, competitor: 80, delta: 10 },
+        { name: 'Answerability signals',  weight: 10.2, you: 97, competitor: 84, delta: 13 },
+        { name: 'Information density',    weight: 10.2, you: 91, competitor: 78, delta: 13 },
+        { name: 'Machine readability',    weight: 10.2, you: 97, competitor: 72, delta: 25 },
+      ],
+    },
     checklist: makeChecklist('69de016e9c10756b6b61329f', [
       {
         label: 'Pick a publishing rhythm',
@@ -630,7 +641,7 @@ export const seedRecommendations: Recommendation[] = [
       'Your competitors are capturing valuable appraisal leads with dedicated local pages while your site lacks this critical conversion tool. Creating a comprehensive Dubbo property appraisal hub with online forms and clear value propositions will help you rank for high-intent searches.',
     category: 'Content',
     impactLabel: 'High impact',
-    effort: 'Medium',
+    effort: 'Quick win',
     themeId: 'property-appraisals',
     createdAt: CREATED_AT,
     locationNames: LOCATION_NAMES,
@@ -732,6 +743,17 @@ export const seedRecommendations: Recommendation[] = [
         'People search for "free property appraisal Dubbo", "home value Dubbo", and rental appraisal help. Competitors capture these leads with dedicated pages.',
     },
     generatedAsset: null,
+    aeoScore: {
+      you: 92,
+      competitor: 81,
+      subScores: [
+        { name: 'Readability',            weight: 10.2, you: 89, competitor: 74, delta: 15 },
+        { name: 'Content freshness',      weight: 10.2, you: 94, competitor: 76, delta: 18 },
+        { name: 'Answerability signals',  weight: 10.2, you: 91, competitor: 82, delta:  9 },
+        { name: 'Information density',    weight: 10.2, you: 88, competitor: 71, delta: 17 },
+        { name: 'Machine readability',    weight: 10.2, you: 96, competitor: 80, delta: 16 },
+      ],
+    },
     checklist: makeChecklist('69de01cb9c10756b6b6132aa', [
       {
         label: 'Create a page just for Dubbo property appraisals',
@@ -893,7 +915,7 @@ export const seedRecommendations: Recommendation[] = [
       'Your Dubbo office lacks dedicated suburb-specific service pages, limiting your visibility in local property searches. With mixed sentiment data but strong 5.0 rating signals, creating targeted pages for each suburb will capture more local searches and convert your established market presence into digital leads.',
     category: 'Content',
     impactLabel: 'High impact',
-    effort: 'Medium',
+    effort: 'Quick win',
     themeId: 'residential-property-sales',
     createdAt: CREATED_AT,
     locationNames: LOCATION_NAMES,
@@ -1007,6 +1029,17 @@ export const seedRecommendations: Recommendation[] = [
         'Prospects with changing expectations look online for clear, local service information. No Dubbo suburb-specific pages exist.',
     },
     generatedAsset: null,
+    aeoScore: {
+      you: 88,
+      competitor: 79,
+      subScores: [
+        { name: 'Readability',            weight: 10.2, you: 85, competitor: 77, delta:  8 },
+        { name: 'Content freshness',      weight: 10.2, you: 90, competitor: 68, delta: 22 },
+        { name: 'Answerability signals',  weight: 10.2, you: 93, competitor: 80, delta: 13 },
+        { name: 'Information density',    weight: 10.2, you: 84, competitor: 75, delta:  9 },
+        { name: 'Machine readability',    weight: 10.2, you: 87, competitor: 70, delta: 17 },
+      ],
+    },
     checklist: makeChecklist('69de02549c10756b6b6132b3', [
       {
         label: 'List the suburbs you want to target first',
@@ -1318,7 +1351,7 @@ export const seedRecommendations: Recommendation[] = [
       'Your agency has earned perfect 5.0 ratings and high client satisfaction, but this powerful proof isn\'t visible online. By publishing local case studies and testimonials, you\'ll convert more website visitors into enquiries by showing real results from real Dubbo clients.',
     category: 'Content',
     impactLabel: 'High impact',
-    effort: 'Medium',
+    effort: 'Quick win',
     themeId: 'residential-property-sales',
     createdAt: CREATED_AT,
     locationNames: LOCATION_NAMES,
@@ -1422,6 +1455,17 @@ export const seedRecommendations: Recommendation[] = [
         'One source reports excellent satisfaction, but other sources say there isn\'t enough public data.',
     },
     generatedAsset: null,
+    aeoScore: {
+      you: 91,
+      competitor: 83,
+      subScores: [
+        { name: 'Readability',            weight: 10.2, you: 88, competitor: 79, delta:  9 },
+        { name: 'Content freshness',      weight: 10.2, you: 93, competitor: 72, delta: 21 },
+        { name: 'Answerability signals',  weight: 10.2, you: 95, competitor: 86, delta:  9 },
+        { name: 'Information density',    weight: 10.2, you: 89, competitor: 76, delta: 13 },
+        { name: 'Machine readability',    weight: 10.2, you: 92, competitor: 81, delta: 11 },
+      ],
+    },
     checklist: makeChecklist('69de02549c10756b6b6132b4', [
       {
         label: 'Reach out to 5 recent clients for their story',

@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { Recommendation } from '../../types'
-import type { RecCategory } from '../../types'
 import AssignModal from './AssignModal'
-import { nsaThemesConfig } from '../../data/nsaThemesConfig'
 import { getLocationsForRec } from '../../data/locationsData'
 import { useAppStore } from '../../store/useAppStore'
 
@@ -74,28 +72,6 @@ function TrendUpIcon() {
   )
 }
 
-// ── Category → affected metric map ───────────────────────────────────────────
-const CATEGORY_METRIC: Partial<Record<RecCategory, string>> = {
-  'Content':             'Citation share',
-  'Website content':     'Citation share',
-  'FAQ':                 'Citation share',
-  'Social':              'Citation share',
-  'Local SEO':           'Visibility',
-  'Technical SEO':       'Visibility',
-  'Website improvement': 'Visibility',
-  'Conversion':          'Visibility',
-  'Trust & Reputation':  'Sentiment',
-  'Reviews':             'Sentiment',
-}
-
-function buildImpactMessage(rec: Recommendation): string {
-  const metric     = CATEGORY_METRIC[rec.category] ?? 'Search AI score'
-  const themeLabel = nsaThemesConfig[rec.themeId]?.label
-  const action     = rec.shortAction ?? 'Completing this'
-  return themeLabel
-    ? `${action} could move your ${metric} for ${themeLabel}`
-    : `${action} could improve your ${metric}`
-}
 
 // ══════════════════════════════════════════════════════════════════════════════
 //  KANBAN compact card (unchanged from before)

@@ -114,6 +114,22 @@ export interface Recommendation {
   keyInsights?: string[]
   swotDrivers?: string[]
   competitorsInsight?: string[]
+  /** AEO content score data — only populated for Content-type recs */
+  aeoScore?: AeoScore
+}
+
+export interface AeoSubScore {
+  name: string
+  weight: number   // e.g. 10.2
+  you: number      // your percentage (0-100)
+  competitor: number
+  delta: number    // positive = you lead
+}
+
+export interface AeoScore {
+  you: number           // total AEO score (0-100)
+  competitor: number    // top competitor's AEO total
+  subScores: AeoSubScore[]
 }
 
 export interface BusinessMetrics {

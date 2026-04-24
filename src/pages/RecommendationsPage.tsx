@@ -1,6 +1,5 @@
 import { useAppStore } from '../store/useAppStore'
 import ListView from '../components/recommendations/ListView'
-import KanbanBoard from '../components/recommendations/KanbanBoard'
 import type { RecStatus } from '../types'
 
 const BASE = import.meta.env.BASE_URL
@@ -49,7 +48,7 @@ function count(recs: ReturnType<typeof useAppStore.getState>['recommendations'],
 }
 
 export default function RecommendationsPage() {
-  const { viewMode, recommendations, activeTab, setActiveTab } = useAppStore()
+  const { recommendations, activeTab, setActiveTab } = useAppStore()
 
   const counts: Record<RecStatus, number> = {
     pending:     count(recommendations, 'pending'),
@@ -98,17 +97,9 @@ export default function RecommendationsPage() {
         </div>
       </div>
 
-      {/* ── List / Kanban content ─────────────────────────────────────────── */}
-      <div
-        className={`flex-1 min-h-0 ${
-          viewMode === 'kanban' ? 'overflow-hidden' : 'overflow-y-auto'
-        }`}
-      >
-        {viewMode === 'list' ? (
-          <ListView />
-        ) : (
-          <KanbanBoard />
-        )}
+      {/* ── Table view ───────────────────────────────────────────────────── */}
+      <div className="flex-1 min-h-0 overflow-y-auto">
+        <ListView />
       </div>
 
     </div>
