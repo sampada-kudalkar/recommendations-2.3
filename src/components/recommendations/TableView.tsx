@@ -65,7 +65,8 @@ function PinIcon() {
 // ── Performance bar ───────────────────────────────────────────────────────────
 function PerformanceBar({ rec, metrics }: { rec: Recommendation; metrics: BusinessMetrics }) {
   const meta  = CATEGORY_METRIC[rec.category]
-  const value = meta ? (metrics[meta.key] as number) : 0
+  // Use rec-specific accurate score when available, fall back to global metrics
+  const value = rec.youScore !== undefined ? rec.youScore : (meta ? (metrics[meta.key] as number) : 0)
   const label = meta?.label ?? 'Score'
   const isNone = value === 0
 
@@ -144,6 +145,7 @@ export default function TableView({ recommendations, metrics }: Props) {
       cmp = (order[a.effort] ?? 1) - (order[b.effort] ?? 1)
     } else if (sortKey === 'performance') {
       const getVal = (r: Recommendation) => {
+        if (r.youScore !== undefined) return r.youScore
         const meta = CATEGORY_METRIC[r.category]
         return meta ? (metrics[meta.key] as number) : 0
       }

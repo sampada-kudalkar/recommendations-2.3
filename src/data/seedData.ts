@@ -97,6 +97,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Publish monthly market updates and guides',
+    youScore: 0,
+    compScore: 40,
     expectedImpact:
       'Creating Dubbo-focused content will significantly increase your organic search visibility, bringing more qualified buyers and sellers to your website. Each suburb guide and market update becomes a lead generation asset that works 24/7, pre-qualifying prospects before they call.',
     keyInsights: [
@@ -251,6 +253,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Build Dubbo testimonials hub',
+    youScore: 62,
+    compScore: 75,
     expectedImpact:
       'A centralized proof hub will significantly increase enquiry-to-appointment conversion rates by reducing hesitation and building immediate trust. Prospects will see real Dubbo success stories, making them more confident to reach out.',
     keyInsights: [
@@ -380,6 +384,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Optimize PM page with processes and CTAs',
+    youScore: 16.7,
+    compScore: 50,
     expectedImpact:
       'Significantly increased landlord enquiries and appraisal requests by removing friction points and building trust through transparency. Clear service standards and easy contact options will convert hesitant visitors into qualified leads.',
     keyInsights: [
@@ -506,6 +512,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Claim and optimize local directory profiles',
+    youScore: 12,
+    compScore: 55,
     expectedImpact:
       'Increased visibility in local search results and directory listings will drive more direct phone calls and appraisal inquiries. Consistent business information across platforms strengthens Google\'s confidence in your location data.',
     keyInsights: [
@@ -654,6 +662,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Add appraisal hub page',
+    youScore: 0,
+    compScore: 38,
     expectedImpact:
       'This dedicated appraisal page will become your primary lead generation tool for property valuations. It will rank prominently in local searches, get cited by AI assistants, and provide a clear conversion path for homeowners. Expect steady growth in qualified appraisal requests within 1-2 months of launch.',
     keyInsights: [
@@ -800,6 +810,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Add appraisal form with callback promise',
+    youScore: 12,
+    compScore: 55,
     expectedImpact:
       'Transform more website visitors into qualified seller leads by removing friction from the inquiry process. A streamlined form with callback guarantee builds trust and urgency, while mobile-optimized contact options capture prospects at their moment of highest intent.',
     keyInsights: [
@@ -928,6 +940,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Build suburb pages',
+    youScore: 0,
+    compScore: 40,
     expectedImpact:
       'Immediate increase in local search visibility across Dubbo suburbs, capturing property owners actively searching for agents. Each suburb page becomes a lead generation tool, showcasing your local expertise and converting searches into listing appointments.',
     keyInsights: [
@@ -1086,6 +1100,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Publish service standards',
+    youScore: 16.7,
+    compScore: 50,
     expectedImpact:
       'Publishing clear service standards will reduce objections during the inquiry process and increase conversion rates from website visitors to actual property management leads. Landlords who see defined response times and escalation procedures are more likely to trust you with their investment properties.',
     keyInsights: [
@@ -1215,6 +1231,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Complete key portal profiles',
+    youScore: 0,
+    compScore: 66.7,
     expectedImpact:
       'By establishing a strong presence on these dominant property portals, you\'ll capture more leads from rural property seekers who rely on these platforms. This increased visibility will drive more direct inquiries, phone calls, and website traffic while simultaneously strengthening your local SEO through improved citation consistency.',
     keyInsights: [
@@ -1364,6 +1382,8 @@ export const seedRecommendations: Recommendation[] = [
     acceptedBy: null,
     completedAt: null,
     shortAction: 'Publish case studies with outcomes',
+    youScore: 0,
+    compScore: 40,
     expectedImpact:
       'Transform your hidden success into visible proof that drives enquiries. When prospects see specific Dubbo properties you\'ve sold, prices achieved, and happy client testimonials, they\'ll choose you over competitors who only make claims without evidence.',
     keyInsights: [

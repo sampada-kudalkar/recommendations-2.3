@@ -116,6 +116,10 @@ export interface Recommendation {
   competitorsInsight?: string[]
   /** AEO content score data — only populated for Content-type recs */
   aeoScore?: AeoScore
+  /** Your actual metric score (0-100) — overrides global BusinessMetrics for bars */
+  youScore?: number
+  /** Top competitor's metric score (0-100) */
+  compScore?: number
 }
 
 export interface AeoSubScore {
